@@ -276,6 +276,20 @@ return [
 
     /*
     |--------------------------------------------------------------------------
+    | Logger Breadcrumb Level
+    |--------------------------------------------------------------------------
+    |
+    | This sets the level at which a logged message will be added as a
+    | breadcrumb to a notification.  By default this level will be 'debug'.
+    |
+    | Must be one of the Psr\Log\LogLevel levels from the Psr specification.
+    |
+    */
+
+    'logger_breadcrumb_level' => env('BUGSNAG_BREADCRUMB_LEVEL'),
+
+    /*
+    |--------------------------------------------------------------------------
     | Auto Capture Sessions
     |--------------------------------------------------------------------------
     |

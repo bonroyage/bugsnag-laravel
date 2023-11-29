@@ -347,6 +347,10 @@ class BugsnagServiceProvider extends ServiceProvider
                 $logger->setNotifyLevel($config['logger_notify_level']);
             }
 
+            if (isset($config['logger_breadcrumb_level'])) {
+                $logger->setBreadcrumbLevel($config['logger_breadcrumb_level']);
+            }
+
             return $logger;
         });
 
